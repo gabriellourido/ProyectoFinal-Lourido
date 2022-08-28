@@ -1,0 +1,25 @@
+*{  margin: 0;    
+    padding: 0;    
+    border: border-box;    
+}
+
+/*FLEXBOX*/
+header,ul,footer{display: flex;}
+
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+    header,footer{flex-direction: column;}
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*TABLET*/
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    body{background-color: rgb(30, 51, 238);}
+}
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){
+
+}
