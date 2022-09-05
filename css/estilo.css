@@ -3,18 +3,21 @@
   padding: 0;
   border: border-box;
 }
+/*ESTILOS GENERALES*/
 nav ul li{margin: 10px;padding: 5px;}
 h1,h3{color: white;}
-footer p{font-weight: bold;}
 a{text-decoration: none;}
 li{list-style: none;font-size: 20px;display: inline-block;}
 .minilogo {width: 40px;}
 .seleccion {height: 200px;}
-.radial{background-image: radial-gradient(#e2d6bf,#dfbb78,#e4a530);}
-.radial2,table{background-image: radial-gradient(#e2ded7,#e0d1b6,#e2bd77);}
 .cat{height: 400px;}
 .letra{color: #5c0931;font-weight: bold;}
-.bgColor1 {
+footer h3{color: #7a1747;font-weight: bold;}
+footer p{font-weight: bold; color: #dfbb78;}
+/*GRADIENTES*/
+.radial{background-image: radial-gradient(#e2d6bf,#dfbb78,#e4a530);}
+.radial2,table{background-image: radial-gradient(#e2ded7,#e0d1b6,#e2bd77);}
+.bgColor1{
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
   --bs-bg-opacity: 0.5;
@@ -40,15 +43,7 @@ li{list-style: none;font-size: 20px;display: inline-block;}
   --bs-bg-opacity: 1;
   background-image: radial-gradient(#d61271c0,#9e0f54cc,#5c0931cc);
 }
-
-.bgColor {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-  --bs-bg-opacity: 0.5;
-  padding: 0.5rem !important;
-  --bs-bg-opacity: 1;
-  background-color: #e2d6bf !important;
-}
+/*ANIMATION*/
 @keyframes movimiento {
   25% {
     transform: rotate(45deg);
@@ -65,27 +60,19 @@ li{list-style: none;font-size: 20px;display: inline-block;}
 }
 
 /*FLEXBOX*/
-header,
-ul,
-footer {
-  display: flex;
-}
+header,ul,footer {display: flex;}
 
 /*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
   
   header,
-  footer {
-    flex-direction: column;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
+  footer {flex-direction: column;}
+  .row {display: flex;flex-direction: column;}
   .card{width: 23rem !important;}
   .tabla{margin-right: calc(-17 * var(--bs-gutter-x))!important;}
+  .video{width: 100%;}
+  form{display: flex;flex-direction: column;}
 }
 
 /*TABLET*/
