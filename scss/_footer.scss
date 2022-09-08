@@ -1,0 +1,16 @@
+footer{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+    --bs-bg-opacity: 0.5;
+    padding: 0.5rem !important;
+    --bs-bg-opacity: 1;
+    background-image: $bordoClaro;
+    h3{
+        color: #7a1747;
+        font-weight: bold;
+    }
+    p{
+        font-weight: bold;
+        color: #dfbb78;
+    }
+}

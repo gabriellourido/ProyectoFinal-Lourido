@@ -1,82 +1,95 @@
 * {
   margin: 0;
-  padding: 0;
-  border: border-box;
-}
-/*ESTILOS GENERALES*/
-nav ul li{margin: 10px;padding: 5px;}
-h1,h3{color: white;}
-a{text-decoration: none;}
-li{list-style: none;font-size: 20px;display: inline-block;}
-.minilogo {width: 40px;}
-.seleccion {height: 200px;}
-.cat{height: 400px;}
-.letra{color: #5c0931;font-weight: bold;}
-footer h3{color: #7a1747;font-weight: bold;}
-footer p{font-weight: bold; color: #dfbb78;}
-/*GRADIENTES*/
-.radial{background-image: radial-gradient(#e2d6bf,#dfbb78,#e4a530);}
-.radial2,table{background-image: radial-gradient(#e2ded7,#e0d1b6,#e2bd77);}
-.bgColor1{
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-  --bs-bg-opacity: 0.5;
-  padding: 0.5rem !important;
-  --bs-bg-opacity: 1;
-  background-image: radial-gradient(#d81674,#ac175f,#440825);
-}
+  padding: 0; }
 
-.bgColor2 {
+header {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
   --bs-bg-opacity: 0.5;
   padding: 0.5rem !important;
   --bs-bg-opacity: 1;
-  background-image: radial-gradient(#dd177781,#a3115883,#5c093183);
-}
+  background-image: radial-gradient(#d81674, #ac175f, #440825); }
+  header nav {
+    background-image: radial-gradient(#e2d6bf, #dfbb78, #e4a530); }
+    header nav img {
+      width: 40px;
+      animation-name: movimiento;
+      animation-iteration-count: infinite;
+      animation-duration: 2s; }
+  header li {
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    font-size: 20px;
+    display: inline-block; }
+  header a {
+    text-decoration: none; }
+    header a:hover {
+      color: red; }
 
-.bgColor3 {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
-  --bs-bg-opacity: 0.5;
-  padding: 0.5rem !important;
-  --bs-bg-opacity: 1;
-  background-image: radial-gradient(#d61271c0,#9e0f54cc,#5c0931cc);
-}
 /*ANIMATION*/
 @keyframes movimiento {
   25% {
-    transform: rotate(45deg);
-  }
-
+    transform: rotate(45deg); }
   50% {
-    transform: translateY(.7em);
-  }
-}
-.animacionImg{
-  animation-name: movimiento;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-}
+    transform: translateY(0.7em); } }
 
-/*FLEXBOX*/
-header,ul,footer {display: flex;}
+main {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  --bs-bg-opacity: 0.5;
+  padding: 0.5rem !important;
+  --bs-bg-opacity: 1;
+  background-image: radial-gradient(#dd177781, #a3115883, #5c093183); }
+  main div {
+    color: #5c0931;
+    font-weight: bold; }
+  main .radial2, main table {
+    background-image: radial-gradient(#e2ded7, #e0d1b6, #e2bd77); }
+  main .cat {
+    height: 400px; }
+  main .seleccion {
+    height: 200px; }
+
+footer {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  --bs-bg-opacity: 0.5;
+  padding: 0.5rem !important;
+  --bs-bg-opacity: 1;
+  background-image: radial-gradient(#d61271c0, #9e0f54cc, #5c0931cc); }
+  footer h3 {
+    color: #7a1747;
+    font-weight: bold; }
+  footer p {
+    font-weight: bold;
+    color: #dfbb78; }
 
 /*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
-  
   header,
-  footer {flex-direction: column;}
-  .row {display: flex;flex-direction: column;}
-  .card{width: 23rem !important;}
-  .tabla{margin-right: calc(-17 * var(--bs-gutter-x))!important;}
-  .video{width: 100%;}
-  form{display: flex;flex-direction: column;}
-}
+  footer {
+    flex-direction: column; }
+  .row {
+    display: flex;
+    flex-direction: column; }
+  .card {
+    width: 23rem !important; }
+  .tabla {
+    margin-right: calc(-17 * var(--bs-gutter-x)) !important; }
+  .video {
+    width: 100%; }
+  form {
+    display: flex;
+    flex-direction: column; } }
 
 /*TABLET*/
-@media only screen and (min-width: 769px) and (max-width: 1023px) {}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  p {
+    font-family: 'Courier New', Courier, monospace; } }
 
 /*DESKTOP*/
-@media only screen and (min-width: 1024px){}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-family: Arial; } }

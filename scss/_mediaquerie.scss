@@ -1,0 +1,21 @@
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px) {
+    header,
+    footer {flex-direction: column;}
+    .row {display: flex;flex-direction: column;}
+    .card{width: 23rem !important;}
+    .tabla{margin-right: calc(-17 * var(--bs-gutter-x))!important;}
+    .video{width: 100%;}
+    form{display: flex;flex-direction: column;}
+  }
+  
+  /*TABLET*/
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    p{font-family: 'Courier New', Courier, monospace;}
+  }
+  
+  /*DESKTOP*/
+  @media only screen and (min-width: 1024px){
+    p{font-family: Arial;}
+  }
