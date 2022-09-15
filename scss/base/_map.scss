@@ -1,0 +1,28 @@
+$coloresDiseño:(
+    header:radial-gradient(#d81674,#ac175f,#440825),
+    main:radial-gradient(#dd177781,#a3115883,#5c093183),
+    footer:radial-gradient(#d61271c0,#9e0f54cc,#5c0931cc),
+);
+
+@each $clave, $valor in $coloresDiseño {
+    #{$clave}{
+        background-image:$valor;
+        padding: 0.5rem;
+    }
+}
+
+$estilos:(
+    color:radial-gradient(#e2d6bf,#dfbb78,#e4a530)
+);
+
+nav{
+    background-image:map-get($estilos, color);
+}
+
+$estilos:(
+    color:radial-gradient(#e2ded7,#e0d1b6,#e2bd77)
+);
+
+.radial2, table{
+    background-image:map-get($estilos, color);
+}

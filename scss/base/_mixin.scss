@@ -1,0 +1,42 @@
+@mixin letra($font-weight){
+font-weight: $font-weight;
+}
+
+main div{
+@include letra(bold)
+}
+
+@mixin colorH3($color,$font-weight){
+    color: $color;
+    font-weight: $font-weight;
+}
+
+h1, h2, h3{
+    @include colorH3(#7E1230, bold)
+}
+
+@mixin colorP($color,$font-weight){
+    color: $color;
+    font-weight: $font-weight;
+}
+
+footer p{
+    @include colorP(#FFAC00, bold)
+}
+
+@mixin imgCarousel($height,$margin){
+    height: $height;
+    margin: $margin;
+}
+
+.cat{
+    @include imgCarousel(400px, 20px)
+}
+
+@mixin imgSeleccion($height){
+    height: $height;
+}
+
+.seleccion{
+    @include imgSeleccion(200px)
+}

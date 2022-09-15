@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
   }
-@import "../scss/variables";
-@import "../scss/header";
-@import "../scss/main";
-@import "../scss/footer";
+@import "../scss/components/navbar";
+@import "../scss/components/card";
+@import "../scss/components/animation";
 @import "../scss/mediaquerie";
+@import "../scss/base/mixin";
+@import "../scss/base/extend";
+@import "../scss/base/map";
+
+

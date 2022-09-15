@@ -1,0 +1,21 @@
+nav{
+    img{
+        width: 40px;  
+        animation-name: movimiento;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+  }
+  li{
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    font-size: 20px;
+    display: inline-block;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+        color: red;
+    }
+  }

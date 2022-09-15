@@ -4,8 +4,9 @@
     header,
     footer {flex-direction: column;}
     .row {display: flex;flex-direction: column;}
-    .card{width: 23rem !important;}
-    .tabla{margin-right: calc(-17 * var(--bs-gutter-x))!important;}
+    .col-6{width: auto;}
+    .col-3{width: auto;}
+    .card{height: auto !important;}
     .video{width: 100%;}
     form{display: flex;flex-direction: column;}
   }
@@ -18,4 +19,4 @@
   /*DESKTOP*/
   @media only screen and (min-width: 1024px){
     p{font-family: Arial;}
-  }
+  } 
