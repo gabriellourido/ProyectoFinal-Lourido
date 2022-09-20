@@ -8,23 +8,16 @@ nav img {
   animation-iteration-count: infinite;
   animation-duration: 2s; }
 
-li {
+nav li {
   margin: 10px;
   padding: 5px;
   list-style: none;
-  font-size: 20px;
-  display: inline-block; }
-
-a {
-  text-decoration: none; }
-  a:hover {
-    color: red; }
-
-main .carta {
-  height: 700px; }
-
-main .card {
-  margin: 10px; }
+  font-size: 20px; }
+  nav li a {
+    text-decoration: none; }
+    nav li a:hover {
+      color: #5C1B21 !important;
+      transform: scale(1.2); }
 
 /*ANIMATION*/
 @keyframes movimiento {
@@ -32,6 +25,12 @@ main .card {
     transform: rotate(45deg); }
   50% {
     transform: translateY(0.7em); } }
+
+main .carta {
+  height: 700px; }
+
+main .card {
+  margin: 10px; }
 
 /*MEDIAQUERIE*/
 /*MOBILE*/
@@ -57,7 +56,7 @@ main .card {
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   p {
-    font-family: 'Courier New', Courier, monospace; } }
+    font-family: Arial; } }
 
 /*DESKTOP*/
 @media only screen and (min-width: 1024px) {
@@ -88,12 +87,12 @@ footer p {
   font-size: 20px;
   background-color: white;
   border-radius: 20px;
-  border: none; }
+  border: none;
+  margin: 5px; }
 
 .boton-enviar {
   background-color: #0b630b;
-  color: white;
-  padding: 5px; }
+  color: white; }
 
 .boton-limpiar {
   background-color: #bd1717;

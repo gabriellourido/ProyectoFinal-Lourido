@@ -7,13 +7,13 @@
     background-color: white;
     border-radius: 20px;
     border: none;
+    margin: 5px;
 }
 // EXTENDER CLASE BASE
 .boton-enviar{
     @extend .boton;
     background-color: rgb(11, 99, 11);
     color: white;
-    padding: 5px;
 }
 .boton-limpiar{
     @extend .boton;
