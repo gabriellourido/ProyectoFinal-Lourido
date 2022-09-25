@@ -9,11 +9,14 @@
     .card{height: auto !important;}
     .video{width: 100%;}
     form{display: flex;flex-direction: column;}
+    .gridSelecciones{grid-template-columns: repeat(1,1fr) !important;}
+    .gridEstadios{grid-template-columns: repeat(1,1fr) !important;}
   }
   
   /*TABLET*/
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     p{font-family: Arial;}
+    .gridSelecciones{grid-template-columns: repeat(2,1fr) !important;}
   }
   
   /*DESKTOP*/
